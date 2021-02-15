@@ -64,7 +64,6 @@ export const validateDocument = (documentId: string) => async (dispatch: any) =>
 		dispatch(stopDocumentValidation(documentId));
 	} catch (err) {
 		// document validation received an error or document was invalid in some part of the process
-		console.log(err);
 		dispatch(stopDocumentValidation(documentId));
 	}
 };

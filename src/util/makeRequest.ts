@@ -1,4 +1,5 @@
 import axios from "axios";
+import { NotificationManager } from "react-notifications";
 
 type RequestProps = {
 	url: string;
@@ -21,7 +22,9 @@ const mapDataToGetQuery = (data: {}): string => {
 }
 
 const handleError = (error: any): Promise<any> => {
-	console.log('API error', error);
+	if (error && error.message) {
+		NotificationManager.error(error.message, "", 2000);
+	}
 	return Promise.reject(error);
 }
 
