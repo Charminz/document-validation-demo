@@ -6,7 +6,7 @@ export const LOAD_DOCUMENTS_BY_PAGE_SUCCESS = "Documents/LOAD_DOCUMENTS_BY_PAGE_
 export const LOAD_DOCUMENTS_BY_PAGE_FAIL = "Documents/LOAD_DOCUMENTS_BY_PAGE_FAIL";
 
 export const loadDocumentsByPage = (pageNo: number) => (dispatch: any): void => {
-	dispatch({ type: LOAD_DOCUMENTS_BY_PAGE_REQUEST, pageNo });
+	dispatch({ type: LOAD_DOCUMENTS_BY_PAGE_REQUEST });
 
 	makeRequest({
 		url: "documents",
