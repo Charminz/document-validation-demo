@@ -1,8 +1,9 @@
 # document-validation-demo
 Test project for Guardtime to validate received dcuments
 
-# Before running the project you need to install dependencies
+## Before running the project you need to install dependencies
 
+In project directory you need to run:
 ### `npm ci`
 
 ## Available Scripts
