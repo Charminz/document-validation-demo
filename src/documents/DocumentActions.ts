@@ -16,7 +16,6 @@ export const loadDocumentsByPage = (pageNo: number) => (dispatch: any): void => 
 			perPage: 50
 		}
 	}).then(response => {
-		console.log(response);
 		dispatch({
 			type: LOAD_DOCUMENTS_BY_PAGE_SUCCESS,
 			documents: response.data.data,
